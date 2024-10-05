@@ -28,10 +28,9 @@ for filename in os.listdir(folder_path):
 db = Chroma.from_documents(
     documents=whole_chunked_documents,
     embedding=embedding_function,
-    collection_name="law_documents",
     persist_directory=persist_directory,
-    client=chroma_client,
 )
+db.persist()
 
 
 
