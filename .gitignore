@@ -1,3 +1,5 @@
 .env
 lawenv/
 data/
+api/__pycache__/
+Retriever/__pycache__/
