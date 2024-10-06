@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from dotenv import load_dotenv
+from fastapi.middleware.cors import CORSMiddleware
 import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath('Generator.py'))))
@@ -8,6 +9,14 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath('Generator.py'))
 from Retriever.Generator import process
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class QueryModel(BaseModel):
     query: str

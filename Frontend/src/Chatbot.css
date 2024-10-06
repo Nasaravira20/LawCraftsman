@@ -1,0 +1,77 @@
+.chat-container {
+    position: fixed; /* Fix the chat container position */
+    bottom: 20px; /* Position from the bottom */
+    right: 20px; /* Position from the right */
+    width: 300px; /* Fixed width */
+    max-width: 90vw; /* Maximum width for smaller screens */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    overflow: hidden; /* Prevent overflow */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+  }
+  
+  /* Messages container */
+  .messages-container {
+    padding: 10px; /* Padding inside messages container */
+    overflow-y: auto; /* Scroll if messages overflow */
+    flex-grow: 1; /* Take remaining space */
+    max-height: 300px; /* Max height for scrolling */
+  }
+  
+  /* Message bubbles */
+  .message-bubble {
+    margin: 5px 0; /* Space between messages */
+    padding: 10px; /* Padding inside message bubble */
+    border-radius: 15px; /* Rounded corners for bubbles */
+    max-width: 80%; /* Max width for bubbles */
+    word-wrap: break-word; /* Allow long words to break */
+  }
+  
+  /* User message bubble */
+  .user {
+    background-color: #007bff; /* User message background color */
+    color: white; /* User message text color */
+    align-self: flex-end; /* Align user messages to the right */
+  }
+  
+  /* Bot message bubble */
+  .bot {
+    background-color: #e1e1e1; /* Bot message background color */
+    color: black; /* Bot message text color */
+    align-self: flex-start; /* Align bot messages to the left */
+  }
+  
+  /* Chat form styles */
+  .chat-form {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Arrange elements vertically */
+    padding: 10px; /* Padding inside form */
+  }
+  
+  /* Textarea styles */
+  .query-input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    resize: none; /* Prevent resizing */
+  }
+  
+  /* Button styles */
+  .submit-btn {
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Pointer on hover */
+    margin-top: 10px; /* Space above button */
+  }
+  
+  /* Button hover effect */
+  .submit-btn:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+  }
+  

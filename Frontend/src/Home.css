@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 70px; /* Adjust for fixed navbar */
+}
+
+.navbar-custom {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand span {
+  color: rgb(125, 76, 170);
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo-name {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(36, 35, 35);
+}
+
+.left-section img {
+  border-radius: 50%;
+}
+
+.right-section {
+  width: 55%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align all text inside */
+}
+
+.right-section h2 {
+  font-size: 2.5em;
+  line-height: 4rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 20px; /* Add margin below heading for spacing */
+}
+
+.right-section span {
+  display: block;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: rgb(36, 35, 35);
+  margin-top: 70px; /* Space above paragraph */
+  margin-bottom: 30px; /* Space below paragraph */
+}
+
+.image-card {
+  display: inline-block;
+  vertical-align: top; /* Align images to the top */
+  margin-right: 10px; /* Space between cards */
+  position: relative;
+  width: 300px; /* Set a fixed width for consistency */
+  height: auto; /* Height adjusts to the content */
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; /* Space below each card */
+}
+
+.image-card img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images cover the card area without distortion */
+}
+
+.image-card .btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(97, 71, 121);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.modal-content {
+  background-color: #f9f9f9;
+}
+
+.modal-title {
+  color: white;
+}
+
+.modal-header {
+  background-color: rgb(88, 47, 126);
+  color: white;
+}
+
+.search-bar .btn-pope {
+  background: linear-gradient(45deg, #743774, rgba(11, 11, 11, 0.533));
+  color: #ffffff;
+  border: none;
+  border-radius: 30px; 
+  padding: 12px 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.search-bar .btn-pope:hover {
+  background: linear-gradient(45deg, #9a43a7, #090f10);
+  /* Hover gradient */
+  color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); 
+  transform: translateY(-2px); 
+}
+
+.navbar-nav .nav-link {
+  color: rgb(76, 7, 140) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(159, 105, 209) !important;
+}
+
+.navbar-toggler-icon {
+  background-color: rgb(185, 51, 215);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-section {
+  width: 40%;
+}
+
+.left-section img {
+  width: 100%;
+  height: auto;
+}
+
+.right-section {
+  width: 55%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-section h2 {
+  color: rgb(76, 7, 140);
+}
+
+.right-section p {
+  color: rgb(36, 35, 35);
+  line-height: 1.6;
+}
+/* Full-page modal styling */
+/* Make the entire section full width */
+#blog {
+  width: 100%;
+}
+
+/* Container for scrollable images */
+.scrollable-container {
+  display: flex;
+  overflow: hidden; /* Hides the scrollbar */
+  scroll-behavior: smooth;
+  width: 100%;
+}
+/* Styling individual cards */
+.image-card {
+  margin: 10px;
+  flex: 0 0 auto;
+  width: 250px;
+  text-align: center;
+}
+
+.image-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Full page width for the modal content */
+.modal-content {
+  width: 100%;
+}
+
+/* Ensure that the blog occupies full width of the page */
+.container.my-5 {
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.chat-float {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right side */
+    width: 300px; /* Set width of the chat container */
+    z-index: 1000; /* Make sure it appears above other content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for better visibility */
+  }
+  
+  /* Optional: To make sure it appears rounded or stands out */
+  .chat-float > div {
+    border-radius: 8px;
+    overflow: hidden;
+  }
