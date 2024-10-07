@@ -20,7 +20,7 @@ def create_prompt(query):
         "The user will describe their problem, and your task is to offer a step-by-step guide on the legal actions "
         "they should take to resolve it. Use simple language and make sure to provide clear, actionable advice. "
         "If specific legal terminology or processes are involved, explain them briefly. Assume the user has no prior legal knowledge.\n\n"
-        "Explain in 30 words"
+        "Explain in detail with next steps"
         "User's Query: {query}"
     )
     return prompt_template.format(query=query)
